@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>External Examiner Feedback — The Last Lesson</title>
+  <meta name="description" content="External Examiner Feedback Form for the English School Project based on 'The Last Lesson' by Alphonse Daudet." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating particles background -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Hero Header -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-flag">🇫🇷</span>
+        <span>Alsace · 1871</span>
+        <span class="badge-flag">🇫🇷</span>
+      </div>
+      <p class="hero-eyebrow">English School Project — External Examiner Feedback</p>
+      <h1 class="hero-title">
+        <span class="title-the">The</span>
+        <span class="title-last">Last</span>
+        <span class="title-lesson">Lesson</span>
+      </h1>
+      <p class="hero-author">
+        <em>A story by <strong>Alphonse Daudet</strong></em>
+      </p>
+      <div class="hero-quote">
+        <blockquote>
+          "When a people are enslaved, as long as they hold fast to their language it is as if they had the key to their prison."
+          <cite>— M. Hamel, <em>The Last Lesson</em></cite>
+        </blockquote>
+      </div>
+      <a href="#feedback-form" class="hero-cta">
+        <span>Provide Your Feedback</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Story Synopsis -->
+  <section class="synopsis" id="synopsis">
+    <div class="container">
+      <div class="synopsis-grid">
+        <div class="synopsis-text">
+          <div class="section-label">About the Story</div>
+          <h2>A Tale of Language, Loss &amp; Patriotism</h2>
+          <p>Set during the Franco-Prussian War of 1870–71, <em>The Last Lesson</em> follows young <strong>Franz</strong>, a schoolboy in Alsace who dreads his French lessons. One morning, he arrives late to school only to discover something heart-breaking — this is the <em>last</em> French lesson ever to be given. The Prussians have ordered all schools in Alsace and Lorraine to teach only German.</p>
+          <p>His devoted teacher, <strong>M. Hamel</strong>, dressed in his finest Sunday clothes, conducts the lesson with quiet dignity and profound sorrow. The village elders fill the back benches, silently mourning the loss of their language and culture.</p>
+          <p>The story closes with M. Hamel unable to speak, writing <em>"Vive La France!"</em> on the blackboard — his final, wordless act of defiance and love.</p>
+        </div>
+        <div class="synopsis-themes">
+          <div class="section-label">Key Themes</div>
+          <div class="theme-cards">
+            <div class="theme-card">
+              <div class="theme-icon">🗣️</div>
+              <h3>Language &amp; Identity</h3>
+              <p>One's mother tongue is the soul of a nation's identity and the key to freedom.</p>
+            </div>
+            <div class="theme-card">
+              <div class="theme-icon">⏳</div>
+              <h3>Regret &amp; Procrastination</h3>
+              <p>We fail to value what we have until the moment it is taken away from us.</p>
+            </div>
+            <div class="theme-card">
+              <div class="theme-icon">🎗️</div>
+              <h3>Patriotism</h3>
+              <p>Love for one's culture and homeland transcends political borders and occupation.</p>
+            </div>
+            <div class="theme-card">
+              <div class="theme-icon">📚</div>
+              <h3>Value of Education</h3>
+              <p>The loss of learning awakens a deeper appreciation for knowledge and schooling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="section-divider">
+    <div class="divider-ornament">✦ ✦ ✦</div>
+  </div>
+
+  <!-- Feedback Form -->
+  <section class="form-section" id="feedback-form">
+    <div class="container">
+      <div class="form-header">
+        <div class="section-label">External Examiner</div>
+        <h2>Project Evaluation Form</h2>
+        <p class="form-subtitle">Your expert assessment helps shape the future of learning. Please fill all sections thoroughly.</p>
+        <div class="ink-divider"></div>
+      </div>
+
+      <form class="feedback-form" id="mainFeedbackForm" novalidate>
+
+        <!-- Section I: Project Information (pre-filled, read-only) -->
+        <div class="form-card" id="card-project">
+          <div class="card-header">
+            <div class="card-number">I</div>
+            <div>
+              <h3>Project Information</h3>
+              <p>Student &amp; project details for this submission</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="project-info-box">
+              <div class="info-item">
+                <span class="info-label">Project Title</span>
+                <span class="info-value">"The Last Lesson"</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Author</span>
+                <span class="info-value">Alphonse Daudet</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Subject</span>
+                <span class="info-value">English Literature</span>
+              </div>
+            </div>
+            <div class="readonly-info-grid">
+              <div class="readonly-info-item">
+                <span class="readonly-label">Student Name :</span>
+                <span class="readonly-value">Piyush Kumar</span>
+              </div>
+              <div class="readonly-info-item">
+                <span class="readonly-label">Class :</span>
+                <span class="readonly-value">12 'I'</span>
+              </div>
+              <div class="readonly-info-item">
+                <span class="readonly-label">Roll Number :</span>
+                <span class="readonly-value">27</span>
+              </div>
+              <div class="readonly-info-item">
+                <span class="readonly-label">Registration Number :</span>
+                <span class="readonly-value">256014</span>
+              </div>
+              <div class="readonly-info-item">
+                <span class="readonly-label">Academic Session :</span>
+                <span class="readonly-value">2026 – 27</span>
+              </div>
+              <div class="readonly-info-item readonly-info-item--wide">
+                <span class="readonly-label">School :</span>
+                <span class="readonly-value">Chinmaya Vidyalaya, Bokaro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section II: Evaluation Criteria (Star Ratings) -->
+        <div class="form-card" id="card-ratings">
+          <div class="card-header">
+            <div class="card-number">II</div>
+            <div>
+              <h3>Evaluation Criteria</h3>
+              <p>Rate each parameter on a scale of 1 (Poor) to 5 (Excellent)</p>
+            </div>
+          </div>
+          <div class="card-body">
+
+            <div class="rating-category-label">📖 Content &amp; Literary Understanding</div>
+            <div class="rating-grid">
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Comprehension of the Story</span>
+                  <span class="rating-desc">Understanding of plot, setting, and narrative arc of 'The Last Lesson'</span>
+                </label>
+                <div class="star-rating" id="rating-comprehension" data-name="comprehension">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_comprehension" id="r-comprehension" value="" />
+                </div>
+                <div class="field-error" id="err-comprehension"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Theme Analysis</span>
+                  <span class="rating-desc">Depth of analysis on patriotism, language identity, and loss</span>
+                </label>
+                <div class="star-rating" id="rating-theme" data-name="theme">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_theme" id="r-theme" value="" />
+                </div>
+                <div class="field-error" id="err-theme"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Character Analysis</span>
+                  <span class="rating-desc">Understanding of Franz, M. Hamel, and the villagers' roles</span>
+                </label>
+                <div class="star-rating" id="rating-character" data-name="character">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_character" id="r-character" value="" />
+                </div>
+                <div class="field-error" id="err-character"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Historical Context Awareness</span>
+                  <span class="rating-desc">Knowledge of the Franco-Prussian War and its impact on Alsace-Lorraine</span>
+                </label>
+                <div class="star-rating" id="rating-history" data-name="history">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_history" id="r-history" value="" />
+                </div>
+                <div class="field-error" id="err-history"></div>
+              </div>
+            </div>
+
+            <div class="rating-category-label">✍️ Presentation &amp; Expression</div>
+            <div class="rating-grid">
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Written Expression &amp; Language</span>
+                  <span class="rating-desc">Clarity, grammar, vocabulary, and style of written work</span>
+                </label>
+                <div class="star-rating" id="rating-expression" data-name="expression">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_expression" id="r-expression" value="" />
+                </div>
+                <div class="field-error" id="err-expression"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Oral Presentation Skills</span>
+                  <span class="rating-desc">Confidence, articulation, and clarity in verbal presentation</span>
+                </label>
+                <div class="star-rating" id="rating-oral" data-name="oral">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_oral" id="r-oral" value="" />
+                </div>
+                <div class="field-error" id="err-oral"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Creativity &amp; Original Thinking</span>
+                  <span class="rating-desc">Original interpretation, creative elements, and personal insights</span>
+                </label>
+                <div class="star-rating" id="rating-creativity" data-name="creativity">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_creativity" id="r-creativity" value="" />
+                </div>
+                <div class="field-error" id="err-creativity"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Visual Presentation &amp; Layout</span>
+                  <span class="rating-desc">Neatness, organization, and visual appeal of the project</span>
+                </label>
+                <div class="star-rating" id="rating-visual" data-name="visual">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_visual" id="r-visual" value="" />
+                </div>
+                <div class="field-error" id="err-visual"></div>
+              </div>
+            </div>
+
+            <div class="rating-category-label">🎯 Overall Performance</div>
+            <div class="rating-grid">
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Research &amp; Reference Usage</span>
+                  <span class="rating-desc">Use of supplementary materials, references, and resources</span>
+                </label>
+                <div class="star-rating" id="rating-research" data-name="research">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_research" id="r-research" value="" />
+                </div>
+                <div class="field-error" id="err-research"></div>
+              </div>
+
+              <div class="rating-item">
+                <label class="rating-label">
+                  <span class="rating-title">Relevance to Curriculum</span>
+                  <span class="rating-desc">Alignment with syllabus objectives and learning outcomes</span>
+                </label>
+                <div class="star-rating" id="rating-relevance" data-name="relevance">
+                  <span class="star" data-value="1">★</span>
+                  <span class="star" data-value="2">★</span>
+                  <span class="star" data-value="3">★</span>
+                  <span class="star" data-value="4">★</span>
+                  <span class="star" data-value="5">★</span>
+                  <input type="hidden" name="r_relevance" id="r-relevance" value="" />
+                </div>
+                <div class="field-error" id="err-relevance"></div>
+              </div>
+            </div>
+
+            <!-- Score Summary -->
+            <div class="score-summary" id="score-summary">
+              <div class="score-display">
+                <div class="score-label">Overall Score</div>
+                <div class="score-value" id="avg-score">—</div>
+                <div class="score-outof">/ 5.0</div>
+              </div>
+              <div class="score-bar-wrapper">
+                <div class="score-bar" id="score-bar"></div>
+              </div>
+              <div class="score-grade" id="score-grade">Rate all criteria above</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section III: Grading -->
+        <div class="form-card" id="card-grading">
+          <div class="card-header">
+            <div class="card-number">III</div>
+            <div>
+              <h3>Final Grade</h3>
+              <p>Assign an overall grade to this project</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Overall Grade <span class="required">*</span></label>
+              <div class="grade-selector" id="grade-selector">
+                <button type="button" class="grade-btn" data-grade="A+" id="grade-aplus">A+</button>
+                <button type="button" class="grade-btn" data-grade="A"  id="grade-a">A</button>
+                <button type="button" class="grade-btn" data-grade="B+" id="grade-bplus">B+</button>
+                <button type="button" class="grade-btn" data-grade="B"  id="grade-b">B</button>
+                <button type="button" class="grade-btn" data-grade="C+" id="grade-cplus">C+</button>
+                <button type="button" class="grade-btn" data-grade="C"  id="grade-c">C</button>
+                <button type="button" class="grade-btn" data-grade="D"  id="grade-d">D</button>
+              </div>
+              <input type="hidden" name="final_grade" id="final-grade" value="" />
+              <div class="field-error" id="err-grade"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="marks-obtained">Marks Obtained</label>
+                <input type="number" id="marks-obtained" name="marks_obtained" min="0" max="100" placeholder="e.g. 85" />
+              </div>
+              <div class="form-group">
+                <label for="marks-total">Total Marks</label>
+                <input type="number" id="marks-total" name="marks_total" min="0" max="100" placeholder="e.g. 100" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section IV: Overall Impression -->
+        <div class="form-card" id="card-impression">
+          <div class="card-header">
+            <div class="card-number">IV</div>
+            <div>
+              <h3>Overall Impression</h3>
+              <p>Your final thoughts on this project</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label>Would you recommend this project for a school award / distinction?</label>
+              <div class="radio-group" id="radio-award">
+                <label class="radio-label" for="award-yes">
+                  <input type="radio" id="award-yes" name="award_rec" value="yes" />
+                  <span class="radio-custom"></span>
+                  <span>Yes, highly recommended</span>
+                </label>
+                <label class="radio-label" for="award-maybe">
+                  <input type="radio" id="award-maybe" name="award_rec" value="maybe" />
+                  <span class="radio-custom"></span>
+                  <span>Possibly, with minor revisions</span>
+                </label>
+                <label class="radio-label" for="award-no">
+                  <input type="radio" id="award-no" name="award_rec" value="no" />
+                  <span class="radio-custom"></span>
+                  <span>Not at this stage</span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>How would you describe your overall impression?</label>
+              <div class="impression-grid" id="impression-grid">
+                <button type="button" class="impression-btn" data-val="outstanding" id="imp-outstanding">🌟 Outstanding</button>
+                <button type="button" class="impression-btn" data-val="excellent" id="imp-excellent">✨ Excellent</button>
+                <button type="button" class="impression-btn" data-val="good" id="imp-good">👍 Good</button>
+                <button type="button" class="impression-btn" data-val="satisfactory" id="imp-satisfactory">📋 Satisfactory</button>
+                <button type="button" class="impression-btn" data-val="needs-work" id="imp-needs-work">🔧 Needs Work</button>
+              </div>
+              <input type="hidden" name="overall_impression" id="overall-impression" value="" />
+            </div>
+            <div class="form-group">
+              <label class="checkbox-label" for="consent-check">
+                <input type="checkbox" id="consent-check" name="consent" value="yes" required />
+                <span class="checkbox-custom"></span>
+                <span>I confirm that this feedback is based on my independent and honest assessment of the project. <span class="required">*</span></span>
+              </label>
+              <div class="field-error" id="err-consent"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="btn-preview">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            Preview
+          </button>
+          <button type="button" class="btn-reset" id="btn-reset">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+            Reset
+          </button>
+          <button type="submit" class="btn-submit" id="btn-submit">
+            <span class="btn-text">Submit Feedback</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-box">
+      <div class="modal-icon">✦</div>
+      <h2 class="modal-title">Merci, Monsieur / Madame!</h2>
+      <p class="modal-message">Your feedback has been recorded. <em>Vive La France!</em> — and vive the spirit of learning that M. Hamel embodied in his final lesson.</p>
+      <div class="modal-quote">"French is the most beautiful language in the world — the clearest, the most logical…"</div>
+      <button class="modal-close" id="modal-close-btn">Close</button>
+    </div>
+  </div>
+
+  <!-- Preview Modal -->
+  <div class="modal-overlay" id="preview-modal">
+    <div class="modal-box preview-box">
+      <h2 class="modal-title">Feedback Preview</h2>
+      <div class="preview-content" id="preview-content"></div>
+      <button class="modal-close" id="preview-close-btn">Close Preview</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <!-- French Flag -->
+        <div class="footer-flag-wrap">
+          <div class="footer-flag">
+            <div class="flag-blue"></div>
+            <div class="flag-white"></div>
+            <div class="flag-red"></div>
+          </div>
+          <span class="footer-flag-label">🇫🇷 Vive La France!</span>
+        </div>
+
+        <div class="footer-quote">
+          <em>"Vive La France!"</em> — M. Hamel's final words on the blackboard
+        </div>
+        <div class="footer-meta">
+          <span>English School Project · External Examiner Feedback</span>
+          <span class="footer-dot">·</span>
+          <span><em>The Last Lesson</em> by Alphonse Daudet</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
